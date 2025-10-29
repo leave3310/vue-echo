@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        // 編譯輸出 JavaScript 的目標語法版本
+        // ESNext：永遠輸出到最新的 ECMAScript 標準
+        "target": "ESNext",
+        // 模組系統類型
+        // ESNext：使用最新的 ES Modules（import / export）
+        "module": "ESNext",
+        // 模組解析策略
+        // "node"：模仿 Node.js 的方式去解析模組 (例如 node_modules, index.ts, package.json 中的 "exports")
+        "moduleResolution": "node",
+        // 編譯後的輸出資料夾
+        "outDir": "dist",
+        // 允許直接 import JSON 檔案，編譯器會把 JSON 當作模組
+        "resolveJsonModule": true,
+        // 是否啟用嚴格模式
+        // false：關閉所有嚴格型別檢查（比較寬鬆）
+        "strict": false,
+        // 編譯時會包含哪些內建 API 定義檔（lib.d.ts）
+        // "ESNext"：最新 ECMAScript API
+        // "DOM"：瀏覽器環境的 API，例如 document, window
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        // 自訂路徑對應（Path Mapping）
+        // "@vue/*" 會對應到 "packages/*/src"
+        // 例如 import { reactive } from "@vue/reactivity"
+        // 會被解析到 packages/reactivity/src
+        "paths": {
+            "@vue/*": [
+                "packages/*/src"
+            ]
+        },
+        // 基準目錄，用來搭配 paths 做相對解析
+        "baseUrl": "./"
+    }
+}
