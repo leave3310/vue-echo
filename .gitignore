@@ -1,0 +1,21 @@
+# 忽略 node_modules 資料夾
+node_modules/
+
+# 忽略編譯輸出的資料夾
+dist/
+
+# 忽略暫存檔案
+*.log
+*.tmp
+*.temp
+
+# 忽略 IDE/編輯器相關檔案
+.vscode/
+.idea/
+.DS_Store
+
+# 忽略測試快照檔案
+__snapshots__/
+
+# 忽略 TypeScript 編譯輸出的檔案
+*.tsbuildinfo
