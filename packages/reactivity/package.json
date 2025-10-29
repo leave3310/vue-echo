@@ -1,0 +1,21 @@
+{
+    "name": "@vue/reactivity",
+    "version": "1.0.0",
+    "description": "響應式模組",
+    "main": "dist/reactivity.cjs.js",
+    "module": "dist/reactivity.esm.js",
+    "files": [
+        "index.js",
+        "dist"
+    ],
+    "sideEffects": false,
+    "buildOptions": {
+        "name": "VueReactivity",
+        "formats": [
+            "esm-bundler",
+            "esm-browser",
+            "cjs",
+            "global"
+        ]
+    }
+}
